@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-12">
+    <label class="form-label">Nome do Segurado</label>
+    <input type="text" class="form-control" [(ngModel)]="nome">
+  </div>
+
+  <div class="col-12">
+    <label class="form-label">Sexo</label>
+    <select class="form-control" [(ngModel)]="sexo">
+      <option value="masculino">Masculino</option>
+      <option value="feminino">Feminino</option>
+    </select>
+  </div>
+
+  <div class="col-12">
+    <label class="form-label">Idade</label>
+    <input type="number" class="form-control" [(ngModel)]="idade">
+  </div>
+
+  <div class="col-12">
+    <label class="form-label">Valor do Automóvel</label>
+    <input type="number" class="form-control" [(ngModel)]="valorAutomovel">
+  </div>
+
+  <div class="col-12 mt-3">
+    <button class="btn btn-primary" (click)="calcularApolice()">Calcular Apólice</button>
+  </div>
+
+  <div class="col-12 mt-3">
+    <label class="form-label">Valor da Apólice</label>
+    <input type="number" class="form-control" [ngModel]="valorApolice" readonly>
+  </div>
+
+  <div class="row">
+    <div class="col mt-3">
+      <p>Resumo</p>
+      <p [innerHTML]="resumo"></p>
+    </div>
+  </div>
+</div>

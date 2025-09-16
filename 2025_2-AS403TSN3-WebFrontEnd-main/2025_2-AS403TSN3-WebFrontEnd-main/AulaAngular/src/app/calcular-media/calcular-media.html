@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-12">
+        <label class="form-label">AC1</label>
+        <input type="number" class="form-control" [(ngModel)]="ac1">
+    </div>
+    <div class="col-12">
+        <label class="form-label">AC2</label>
+        <input type="number" class="form-control" [(ngModel)]="ac2">
+    </div>
+    <div class="col-12">
+        <label class="form-label">AG</label>
+        <input type="number" class="form-control" [(ngModel)]="ag">
+    </div>
+    <div class="col-12">
+        <label class="form-label">AF</label>
+        <input type="number" class="form-control" [(ngModel)]="af">
+    </div>
+    <div class="col-12 mt-3">
+        <button class="btn btn-primary" (click) = "calcularmedia()">Calcular Media</button>
+    </div>
+    <div class="col-12 mt-3">
+        <label class="form-label">Resultado</label>
+        <input type="number" class="form-control" [ngModel]="resultado" readonly>
+    </div>
+    <div class="row">
+        <div class="col mt-3">
+            <p>Situação do aluno</p>
+            <p [innerHTML]="situacao"></p>
+        </div>
+    </div>
+</div>
