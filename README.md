@@ -1,44 +1,112 @@
-1. Crie um novo projeto e adicione um menu superior com as opções: calcular média,  apólice, conversor temperatura e IMC. Cada item do menu deverá abrir seu respectivo componente.
+Claro! Aqui está o texto formatado como um `README.md` para GitHub, com seções bem organizadas e linguagem clara:
 
-2. Crie os seguintes componentes e implemente o código conforme a explicação:
+---
 
-1. (2,0) Calcular Média
+# 📚 Projeto de Componentes Interativos
 
-Crie uma componente que receberá as notas: AC1, AC2, AG e AF.
-Calcule a média ao clicar no botão “Calcular” e mostre se está aprovado ou reprovado, a média é 5.
-Média Final = (AC1 * 0,15) + (AC2 *0,30) + (AG * 0,10) + (AF * 0,45)
-2. (2,0) Apólice de Seguro
+Este projeto consiste na criação de uma aplicação com múltiplos componentes funcionais, acessíveis por um menu superior. Cada componente realiza uma tarefa específica: cálculo de média, apólice de seguro, conversor de temperatura e cálculo de IMC.
 
-Crie um formulário de apólice para seguro automobilístico. Para isso o consultor preencherá: Nome do segurado, o sexo, a idade e o valor do automóvel. Mediante a regra abaixo calcule e exiba o valor da apólice de seguro:
-Se sexo for masculino e idade <= 25: Valor da apólice = 15% do valor do automóvel
-Se sexo for masculino e idade > 25: Valor da apólice = 10% do valor do automóvel
-Se sexo for feminino: Valor da apólice = 8% do valor do automóvel
-3. (2,0) Conversor de temperatura 
-Crie um componente que receba uma temperatura em graus Celsius e a converta para Fahrenheit e Kelvin ao clicar no botão "Converter". Exiba os resultados em dois campos de saída.
-Fórmulas de conversão:
-Fahrenheit (°F) = (Celsius (°C) × 9/5) + 32
-Kelvin (K) = Celsius (°C) + 273.15
-4. (2,0) Calculadora de IMC (Índice de Massa Corporal)
-Crie um componente que receba o peso (em kg) e a altura (em metros) de uma pessoa. Ao clicar no botão "Calcular", o componente deve calcular o IMC e exibir a classificação de acordo com a tabela a seguir:
-Fórmula do IMC:
-IMC
-=
-Peso (kg)
-Altura (m)
-2
-​
-Classificação de IMC:
-Abaixo de 18.5: Abaixo do peso
-Entre 18.5 e 24.9: Peso normal
-Entre 25 e 29.9: Sobrepeso
-Entre 30 e 34.9: Obesidade grau I
-Entre 35 e 39.9: Obesidade grau II
-Acima de 40: Obesidade grau III
-Dinâmica da atividade:
+## 🧭 Navegação
 
-Até às 21h => Fazer e postar no Canvas o exercício
-Parte prática pode ser em dupla.
-das 21h às 22:40 => Fazer a parte teórica com o professor.
-Parte teórica é individual.
-Após as 21h não será aceito atividades no Canvas e será realizado a parte teórica da dupla em ordem alfabética.
-É obrigatório mostrar o exercício para o professor EM SALA DE AULA para obter nota! 8 pontos será da nota prática e 2 pontos da teórica.
+Ao iniciar o projeto, será exibido um menu superior com as seguintes opções:
+
+- **Calcular Média**
+- **Apólice de Seguro**
+- **Conversor de Temperatura**
+- **Calculadora de IMC**
+
+Cada item do menu abre seu respectivo componente.
+
+---
+
+## 🧮 1. Calcular Média (2,0 pts)
+
+Componente que recebe as seguintes notas:
+
+- **AC1**
+- **AC2**
+- **AG**
+- **AF**
+
+### 🎯 Objetivo
+
+Calcular a média final ao clicar no botão **"Calcular"** e exibir se o aluno está **aprovado** ou **reprovado**. A média mínima para aprovação é **5.0**.
+
+### 📐 Fórmula
+
+```
+Média Final = (AC1 × 0,15) + (AC2 × 0,30) + (AG × 0,10) + (AF × 0,45)
+```
+
+---
+
+## 🚗 2. Apólice de Seguro (2,0 pts)
+
+Formulário para cálculo de apólice de seguro automobilístico.
+
+### 📝 Campos obrigatórios
+
+- Nome do segurado
+- Sexo
+- Idade
+- Valor do automóvel
+
+### 📊 Regras de cálculo
+
+- **Sexo masculino e idade ≤ 25**: apólice = 15% do valor do automóvel  
+- **Sexo masculino e idade > 25**: apólice = 10% do valor do automóvel  
+- **Sexo feminino**: apólice = 8% do valor do automóvel
+
+---
+
+## 🌡️ 3. Conversor de Temperatura (2,0 pts)
+
+Componente que converte uma temperatura em graus Celsius para Fahrenheit e Kelvin.
+
+### 🔁 Fórmulas de conversão
+
+- **Fahrenheit (°F)** = (Celsius × 9/5) + 32  
+- **Kelvin (K)** = Celsius + 273.15
+
+Ao clicar no botão **"Converter"**, os resultados são exibidos em dois campos de saída.
+
+---
+
+## ⚖️ 4. Calculadora de IMC (2,0 pts)
+
+Componente que calcula o Índice de Massa Corporal (IMC) com base no peso e altura informados.
+
+### 📐 Fórmula
+
+```
+IMC = Peso (kg) / (Altura (m))²
+```
+
+### 🧾 Classificação
+
+| IMC              | Classificação         |
+|------------------|-----------------------|
+| Abaixo de 18.5   | Abaixo do peso        |
+| 18.5 – 24.9      | Peso normal           |
+| 25 – 29.9        | Sobrepeso             |
+| 30 – 34.9        | Obesidade grau I      |
+| 35 – 39.9        | Obesidade grau II     |
+| Acima de 40      | Obesidade grau III    |
+
+---
+
+## 🕒 Dinâmica da Atividade
+
+- **Até às 21h**: Realizar e postar o exercício no Canvas  
+  - Parte prática pode ser feita em dupla  
+- **Das 21h às 22h40**: Parte teórica com o professor  
+  - Parte teórica é individual  
+- **Após as 21h**: Não serão aceitas atividades no Canvas  
+  - A parte teórica será realizada em ordem alfabética  
+- **Obrigatório**: Mostrar o exercício ao professor em sala para obter nota  
+  - **Nota prática**: 8 pontos  
+  - **Nota teórica**: 2 pontos
+
+---
+
+Se quiser, posso te ajudar a criar os componentes ou montar a estrutura do projeto também!
